@@ -1,0 +1,141 @@
+@font-face {
+    font-family: gor;
+    src: url(gorine.otf);}
+
+@font-face {
+    font-family: sp;
+    src: url(splach.ttf);}
+
+@font-face {
+    font-family: tex;
+    src: url(super.ttf);}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 0, 0);
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+.lunch{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    float: center;
+    margin-top: -1.5rem;}
+
+nav{
+    background-color: #5100ff;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    border: 2px solid black;
+}
+
+#ad1{
+    margin-top: 0rem;
+    line-height: 0.2rem;
+    margin-left: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+#lunchly{
+    margin-top: 4rem;
+    height: 70vh;
+    width: 95.8vw;
+    z-index: -1;
+}
+
+#box{
+    border: 4px solid rgb(190, 0, 0);
+    padding-left: 0.5rem;
+    line-height: 0.8rem;
+    margin-top: 0rem;
+    height: fit-content;
+    width: fit-content;
+    z-index: 3;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    font-family: sp;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; 
+}
+
+h5{
+    font-size: x-large;
+    font-weight: bold;
+    font-weight: bold;
+    font-family: gor;
+    background-image: linear-gradient(
+        to right,
+        rgb(255,0,0), 
+        rgb(255, 166, 0),
+        rgb(255, 255, 0),
+        rgb(55, 255, 0),
+        rgb(0, 255, 204)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbow 3s alternate infinite;
+      background-size: 200% 100%;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+#crumbs{
+    float: center;
+    margin-top: 0rem;
+    font-family: tex;
+    height: fit-content;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+}
+
+#pink{
+    color: palevioletred;
+    text-shadow:
+      -2px -2px 0 black,
+      2px -2px 0 black,
+      -2px 2px 0 black,
+      2px 2px 0 black;
+}
+
+#blue{
+    color:darkturquoise;
+    text-shadow:
+    -2px -2px 0 rgb(0, 28, 76),
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+#red{
+    color:crimson;
+    text-shadow:
+    -2px -2px 0 rgb(76, 0, 0),
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
